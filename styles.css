@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #000;
+    --main-color: #964B00;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    backdrop-filter: blur(4.8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header.sticky {
+    padding: 5px 100px;
+    background: #1f242d;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    padding: 7px 10px;
+    background: #964B00;
+    border-radius: 10px;
+}
+
+.header .navbar a .download{
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    transition: .5s;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+#home {
+    background-image: url('Capture1.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-content {
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    color: #ebecf5;
+    font-size: 16px;
+}
+
+.hero-content a {
+    background: rgb(255, 0, 0);
+    padding: 16px 55px;
+    box-shadow: red;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content a:hover {
+    background: #323946;
+    font-size: 24px;
+    transition: .4s;
+    text-transform: uppercase;
+}
+#game{
+    background: url(Capture.PNG);
+    background-size: cover;
+}
+
+#game .game{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#game .line{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#update{
+    justify-content: space-between;
+    background: url(update.jpg);
+    background-size: cover;
+}
+
+#update .update1{
+    color: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    transition: .5s;
+}
+
+#update .update1 img{
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+#update .update1 p{
+    font-size: 15px;
+}
+
+#update .update1 h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#update .update2{
+    color: #fff;
+    padding: 50px 50px;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
+    transition: .5s;
+}
+
+#update .update2 img{
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+#update .update2 p{
+    font-size: 15px;
+}
+
+#update .update2 h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+
+.footer-text p {
+    font-size: 1.2rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+#download {
+    background: url(download.jpg);
+}
+
+#download h3 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#download p {
+    font-size: 24px;
+    color: #323946;
+    font-weight: bold;
+}
+
+#download h4 {
+    font-size: 20px;
+    color: #323946;
+    font-weight: bold;
+}
+
+#download .option a {
+    font-size: 26px;
+    justify-content: space-between;
+    color: #323946;
+    font-weight: bold;
+    background: #964B00;
+    padding: 16px 16px;
+    border-radius: 10px;
+}
+
+#download .option a:hover {
+    font-size: 28px;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: bold;
+    background: green;
+    padding: 16px 16px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.footer{
+    background: white;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+}
